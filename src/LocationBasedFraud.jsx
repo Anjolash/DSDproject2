@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
+import './TransationsTable.css';
 
 const LocationBasedFraud = () => {
   const [fraudData, setFraudData] = useState([]);
@@ -65,7 +66,7 @@ const LocationBasedFraud = () => {
   };
 
   return (
-    <div>
+    <div id='mt90px'>
       <h2>Fraud Cases by Location</h2>
       <Bar data={chartData} />
     </div>

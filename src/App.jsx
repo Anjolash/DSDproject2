@@ -17,6 +17,7 @@ import TransactionsTable from './TransactionsTable';
 import FraudOverTime from './FraudOverTime';
 import LocationBasedFraud from './LocationBasedFraud';
 import AnalyticsDisplay from './AnalyticsData';
+import './App.css';
 
 // Register necessary Chart.js components
 ChartJS.register(
@@ -122,7 +123,7 @@ function App() {
     },
   };*/
   return (
-    <>
+    <section id='app'>
       <div className='w-[100vw] h-[100vh] flex'>
         <div className='w-[220px] h-[100%] bg-blue-900 p-[10px] rounded-r-[30px] mr-[10px]'>
 
@@ -158,6 +159,7 @@ function App() {
 
         <h1 className='p-[20px] text-[25px] w-[100%] text-center ' >Analytics</h1>
         <TransactionsTable />
+        <div className="mb-40px"></div>
         <FraudOverTime />
         <LocationBasedFraud />
 
@@ -179,7 +181,7 @@ function App() {
 
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

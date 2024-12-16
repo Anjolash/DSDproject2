@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
+import './TransationsTable.css';
 
 const FraudOverTime = () => {
   const [fraudData, setFraudData] = useState([]);
@@ -67,7 +68,7 @@ const FraudOverTime = () => {
   };
 
   return (
-    <div>
+    <div id='mt90px'>
       <h2>Fraud Cases Over Time</h2>
       <Line data={chartData} />
     </div>

@@ -47,7 +47,7 @@ const TransactionsTable = () => {
   const currentTransactions = transactions.slice(offset, offset + itemsPerPage);
 
   return (
-    <div>
+    <div id="mb40px">
       <h1>Transactions</h1>
       <table className="transactions-table">
         <thead>
